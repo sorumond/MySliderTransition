@@ -1,0 +1,75 @@
+body {
+    background: darkgray;
+}
+
+.tr{
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    background: green;
+    margin: auto;
+}
+
+.a  {
+    height: 300px;
+    min-width: 50%;
+    background: dodgerblue;
+    border: 1px solid black;
+}
+
+
+
+.window {
+    display: flex;
+    transition: 2s;
+    margin: auto;
+    width: 1000px;
+    height: 400px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.slide {
+    min-width: 300px;
+    margin: 0 15px 0 15px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+}
+
+.left, .right {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.left {
+    background: white url("img/arrow_left.svg") no-repeat 48%;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    z-index: 2;
+}
+
+.right {
+    background: white url("img/arrow_right.svg") no-repeat 48%;
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    z-index: 2;
+}
+
+
